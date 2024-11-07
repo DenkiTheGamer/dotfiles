@@ -1,0 +1,10 @@
+
+[window]
+decorations = "None"
+
+[mouse]
+hide_when_typing = true
+
+[general]
+import = ["~/.config/alacritty/catppuccin.toml"]
+
