@@ -16,7 +16,9 @@ vim.cmd("nmap <C-h> <C-w>h")
 vim.cmd("nmap <C-j> <C-w>j")
 vim.cmd("nmap <C-k> <C-w>k")
 vim.cmd("nmap <C-l> <C-w>l")
-vim.keymap.set("n", "<leader>s<Backspace>", ":noh")
+vim.keymap.set("n", "<leader>p<Backspace>", ":noh")
+
+vim.cmd("tmap <Esc> <C-\\><C-n>")
 
 vim.g.mapleader = " "
 
