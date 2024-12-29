@@ -109,6 +109,7 @@ button {
 }
 
 #tray {
+		padding: 0px 8px;
     background-color: @surface0;
     border-radius: 25px;
     border: 2px solid @yellow;
