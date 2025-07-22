@@ -98,7 +98,7 @@ button {
 
 #mpris {
 		background-color: @base;
-		padding: 0px 10px;
+		padding: 0px 5px;
 		border-radius: 0px;
 		color: @green;
 		border-bottom: 2px solid @green;
