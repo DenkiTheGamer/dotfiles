@@ -5,9 +5,9 @@
     // "height": 36, // Waybar height (to be removed for auto height)
     // "width": 1280, // Waybar width
     "spacing": 5, // Gaps between modules (4px)
-    "margin-top": 0,
-    "margin-right": 0,
-    "margin-left": 0,
+    "margin-top": 5,
+    "margin-right": 5,
+    "margin-left": 5,
     // Choose the order of the modules
     "modules-left": [
 	"hyprland/workspaces"
@@ -17,7 +17,6 @@
     ],
     "modules-right": [
         "pulseaudio",
-				"mpris",
         "tray",
         "clock",
         "custom/power"
@@ -56,12 +55,17 @@
         },
         "on-click": "pavucontrol"
     },
-		"mpris": {
-				"spacing": 0,
-				"format": "  {title} - {artist}",
-				"ignored-players": ["zen-bin"],
-				"max-length": 30
-		},
+    "custom/music": {
+        "format": "{icon} {}",
+        "max-length": 40,
+        "format-icons": {
+            "spotify": "",
+            "default": "🎜"
+        },
+        "escape": true,
+        "exec": "$HOME/.config/waybar/mediaplayer.py 2> /dev/null" // Script in resources folder
+        // "exec": "$HOME/.config/waybar/mediaplayer.py --player spotify 2> /dev/null" // Filter player based on name
+    },
     "custom/power": {
         "format" : "⏻",
 	"justify": "center",

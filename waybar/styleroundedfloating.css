@@ -8,12 +8,12 @@
 
 window#waybar {
     background-color: @base;
-		border-bottom: 2px solid @surface0;
-	  border-radius: 0px;
+		border: 2px solid @surface0;
+	  border-radius: 25px;
 }
 
 window#waybar>box {
-	  padding: 0px 0px;
+	  padding: 5px 5px;
 }
 
 button {
@@ -21,17 +21,17 @@ button {
 }
 
 #workspaces {
-    padding: 0px 0px;
+    padding: 5px 5px;
 		margin: 0px 5px;
-    background: @base;
-    border-radius: 0px;
-    border-bottom: 2px solid @mauve;
+    background: @surface0;
+    border-radius: 25px;
+    border: 2px solid @mauve;
 }
 
 #workspaces button {
-    padding: 0px 4px;
-	  margin: 0px 0px;
-    border-radius: 0px;
+    padding: 2px 2px;
+	  margin: 0px 2px;
+    border-radius: 25px;
     background-color: transparent;
     color: #ffffff;
 }
@@ -61,21 +61,20 @@ button {
     background-color: @red;
 }
 
-
 #window {
-    background-color: @base;
+    background-color: @surface0;
     padding: 0px 10px;
-    border-radius: 0px;
+    border-radius: 25px;
     color: @blue;
-    border-bottom: 2px solid @blue;
+    border: 2px solid @blue;
 }
 
 #clock {
 		padding: 5px 8px;
-    background-color: @base;
+    background-color: @surface0;
     color: @peach;
-    border-radius: 0px;
-    border-bottom: 2px solid @peach;
+    border-radius: 25px;
+    border: 2px solid @peach;
 }
 
 #pulseaudio:hover {
@@ -85,32 +84,23 @@ button {
 
 #pulseaudio {
     padding: 0px 10px;
-		margin: 0px 0px 0px 5px;
-    background-color: @base;
-    border-radius: 0px;
-    color: @teal;
-    border-bottom: 2px solid @teal;
+    background-color: @surface0;
+    border-radius: 25px;
+    color: @green;
+    border: 2px solid @green;
 }
 
 #pulseaudio.muted {
     background-color: @crust;
 }
 
-#mpris {
-		background-color: @base;
-		padding: 0px 10px;
-		border-radius: 0px;
-		color: @green;
-		border-bottom: 2px solid @green;
-}
-
 #custom-power {
-    background-color: @base;
-    border-radius: 0px;
+    background-color: @surface0;
+    border-radius: 25px;
     font-size: 16px;
     margin: 0px 5px 0px 0px;
     padding: 0px 10px 0px 6px;
-    border-bottom: 2px solid @red;
+    border: 2px solid @red;
     color: @red;
 }
 
@@ -120,9 +110,9 @@ button {
 
 #tray {
 		padding: 0px 8px;
-    background-color: @base;
-    border-radius: 0px;
-    border-bottom: 2px solid @yellow;
+    background-color: @surface0;
+    border-radius: 25px;
+    border: 2px solid @yellow;
 }
 
 #tray > .passive {
